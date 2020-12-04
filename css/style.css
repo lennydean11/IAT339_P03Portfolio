@@ -38,9 +38,9 @@ code {
 .button-nav {
   margin: 1rem;
   display: inline-block;
-  padding: 0.5em 0em;
+  padding: 0.5em 1em;
   color: black;
-  border: 1px solid white;
+  border: 1px solid black;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
@@ -48,7 +48,6 @@ code {
 
 .button-nav:hover, .button-nav:focus {
   font-weight: bolder;
-  border-bottom: 0.0625rem solid black;
 }
 
 /*[START] IN-TEXT LINK [START]*/
