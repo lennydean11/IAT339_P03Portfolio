@@ -1,0 +1,17 @@
+.parallax-bg-1::after{
+    background-image: url(file:///Users/DeanTin/Desktop/Fall%202020/IAT339/P03/IAT339_P03Portfolio/img/work2.png);
+}
+.parallax-bg-2::after{
+    background-image: url(file:///Users/DeanTin/Desktop/Fall%202020/IAT339/P03/IAT339_P03_Portfolio/img/storyboard1.JPG);
+}
+.workimg{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.workimg img{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem;
+  width: 50%;
+}
