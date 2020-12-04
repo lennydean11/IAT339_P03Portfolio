@@ -4,6 +4,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background: black;
 }
 *{
     margin: 0;
@@ -105,7 +106,7 @@ nav .icon-burger {
 nav .icon-burger .line {
     width: 25px;
     height: 3px;
-    background: black;
+    background: white;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -125,12 +126,12 @@ span.c {
     nav .links {
         float: none;
         position: fixed;
-        z-index: 9;
+        z-index: 0;
         left: 0;
         right: 0;
-        top: 70px;
+        top: 0px;
         bottom: 100%;
-        background: white;
+        background: black;
         width: auto;
         flex-direction: column;
         justify-content: space-evenly;
@@ -177,20 +178,10 @@ nav a:hover {
     transition: all ease-in-out 250ms;
 }
 
-
-
 nav a:hover::before {
     width: 100%;
 }
 
-.navbar2{
-  position: fixed;
-  background: white;
-}
-.navbar2 a{
-  font-family: 'Open Sans' sans-serif;
-  color: black;
-}
 
 .parallax-wrapper{
     height: 100vh;
@@ -210,7 +201,6 @@ nav a:hover::before {
     font-size: 50px;
     font-family: 'drugs';
     color: #fff;
-    padding: 5px 10px;
 }
 .single-parallax h2{
   font-family: 'drugs';
@@ -221,11 +211,17 @@ nav a:hover::before {
   font-size: 14px;
 }
 
+.static-bg{
+    background: #1d2228;
+    color: white;
+
+}
+
 .static-bg p{
-  width: 40rem;
+  width: 70%;
   padding: 2rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 30px;
 }
 .Parallax::after{
@@ -245,11 +241,6 @@ nav a:hover::before {
 .parallax-bg-2::after{
     background-image: url(file:///Users/DeanTin/Desktop/Fall%202020/IAT339/P03/IAT339_P03_Portfolio/img/storyboard1.JPG);
 }
-.static-bg{
-    background: #eae7dc;
-    color: white;
-}
-
 .parallax-bg-2 h1{
   background: black;
   color: white;
@@ -259,6 +250,27 @@ nav a:hover::before {
   background: black;
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 75em){
+  .static-bg p{
+    padding: 1rem;
+  }
+  .work3img{
+    flex-direction: column;
+  }
+  .work3img img{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 60em){
+  .static-bg p{
+    padding: 1rem;
+    margin-bottom: 5em;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .work3img{
