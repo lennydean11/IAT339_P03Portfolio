@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Style Guide Template</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p>
+
+
+    <nav>
+
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>,
+        <a href="home.html">Website</a>.
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="btn-nav">
+            <a class="button-nav" href="#">Home</a>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+        <div class="intropara">
+          <p>Hi, i'm Dean - A visual artist, film enthusiast and undergraduate student at <a href="https://sfu.ca">Simon Fraser University</a>.</p>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.btn</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button type="button" class="button" name="button"&gt;Name&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="buttons">
+          <button class="btn subtn" type="button" name="submit">submit</button>
+          <button class="btn resbtn" type="button" name="submit">reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.wrapper</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" required&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <div class="wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <div class="underline">
+            </div>
+            <label>Name</label>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+        <div class="headings">
+          <h1>This is my H1</h1>
+          <h2>This is my H2</h2>
+          <h3>This is my H3</h3>
+          <h4>This is my H4</h4>
+        </div>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <div class="paragraph">
+          <p>As a visual artist, film enthusiast and undergraduate student at Simon Fraser University, I was initially here to study Graphic Design but I find myself more comfortable crafting projects in the Media concentration of SFU's Interactive Arts and Technology program. With sketching and drawing being embedded in my DNA and being obsessed with portraits, I am captivated by the complexity of the human body, specifically the face and its emotions, which pushes me to be as detail-orientated as possible in my work. I nurture a growing interest in Film and 3D Animation where my sketching skills can be conveniently used.</p>
+
+        </div>
+      </section>
+
+      <section>
+        <h2>Icons</h2>
+          <div class="contact-info">
+            <div class="card">
+              <img class="card-icon" src= "img/email.png">
+              <p>ltinhinh@sfu.ca</p>
+            </div>
+
+            <div class="card">
+              <img class="card-icon" src= "img/phone.png">
+              <p>+1 7783855597</p>
+            </div>
+
+            <div class="card">
+              <img class="card-icon" src= "img/location.png">
+              <p>Surrey, BC, CA</p>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+<!--
+        <div class="navbar">
+          <nav>
+            <label class="logo">myPortfolio</label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">My Work</a></li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+            <label id="icon">
+              <i class="fas fa-bars"></i>
+            </label>
+          </nav>
+
+        </div><br><br>-->
+
+        <div class="navbar2">
+          <div class="header">
+            <div class="navcontainer">
+              <nav>
+                <label class="logo">nav</label>
+                <ul class="links">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">my work</a></li>
+                  <li><a href="#">contact me</a></li>
+                </ul>
+                <label id="icon">
+                  <i class="fas fa-bars"></i>
+                </label>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <section>
+        <h2>Artefact Listing</h2>
+
+        <div class="artefact">
+          <img src="img/work1.png" alt="a1">
+          <div class="apara">
+          <h1>George</h1>
+          <p>Hi, i'm Dean - A visual artist, film enthusiast and undergraduate student at Simon Fraser University.</p>
+        </div>
+      </div>
+
+      <div class="artefact">
+        <div class="slider">
+          <div class="images">
+            <!--
+              <input type="radio" name="slide" id="img1" checked>
+              <input type="radio" name="slide" id="img2">
+              <input type="radio" name="slide" id="img3">
+              <input type="radio" name="slide" id="img4">
+              <input type="radio" name="slide" id="img5">
+
+              <div class="dots">
+                  <label for="img1"></label>
+                  <label for="img2"></label>
+                  <label for="img3"></label>
+                  <label for="img4"></label>
+                  <label for="img5"></label>
+              </div> -->
+
+              <img src="img/harold1.png" class="m1" alt="img1">
+              <img src="img/harold2.jpg" class="m2" alt="img2">
+              <img src="img/harold3.jpg" class="m3" alt="img3">
+              <img src="img/harold4.jpg" class="m4" alt="img4">
+              <img src="img/harold5.jpg" class="m5" alt="img5">
+          </div>
+
+      </div>
+
+      </div>
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
