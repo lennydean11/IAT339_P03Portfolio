@@ -1,0 +1,273 @@
+/*https://codepen.io/joomcoder/pen/BaojZJQ*/
+
+/* [END]NAVIGATION BAR[END]*/
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 5%;
+    height: 70px;
+    background: transparent;
+}
+
+nav .logo {
+    float: left;
+    padding-top: 0.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 20rem) {
+    nav .logo {
+        font-size: 1rem;
+    }
+}
+
+.logoCo {
+    text-decoration: none;
+    color: #1d2228;
+}
+
+.logoCo a:hover {
+  color: white;
+}
+
+.logoCo a::before {
+    content: '';
+    display: block;
+    transform: translateY(0%);
+    height: 9px;
+    background-color: RGB(255, 255, 255, 0);
+    top: 0;
+    width: 0%;
+}
+
+nav .links {
+  float: right;
+  padding-bottom: 0rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+nav .links li {
+  text-align: center;
+  border: 1px solid white;
+  padding: 0 0.5em;
+  margin: 0.5em;
+    list-style: none;
+    align-items: center;
+}
+
+nav .links a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 13px;
+    color: white;
+}
+
+nav .links li:hover{
+  border: 1px solid #d8c3a5;
+  transition: all ease-in-out 250ms;
+}
+
+#nav-toggle {
+    position: relative;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-10%);
+}
+
+nav .icon-burger .line {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+span.c {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    nav .logo {
+        transform: translateY(-20%);
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 100%;
+        background: white;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    nav .links a {
+        font-size: 15px;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked~.links {
+        bottom: 0;
+    }
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+}
+.navcontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.homeColor {
+    color: rgb(0, 0, 0);
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav a:hover {
+    color: #d8c3a5;
+    transition: all ease-in-out 250ms;
+}
+
+
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.navbar2{
+  position: fixed;
+  background: white;
+}
+.navbar2 a{
+  font-family: 'Open Sans' sans-serif;
+  color: black;
+}
+
+.parallax-wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+.single-parallax{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.single-parallax h1{
+    font-size: 50px;
+    font-family: 'drugs';
+    color: #fff;
+    padding: 5px 10px;
+}
+.single-parallax h2{
+  font-family: 'drugs';
+  color: white;
+  font-size: 20px;
+}
+.single-parallax h2{
+  font-size: 14px;
+}
+
+.static-bg p{
+  width: 40rem;
+  padding: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  line-height: 30px;
+}
+.Parallax::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+.parallax-bg-1::after{
+    background-image: url(file:///Users/DeanTin/Desktop/Fall%202020/IAT344/Portfolio/Screen%20Shot%202020-11-26%20at%206.11.22%20PM.png);
+}
+.parallax-bg-2::after{
+    background-image: url(file:///Users/DeanTin/Desktop/Fall%202020/IAT339/P03/IAT339_P03_Portfolio/img/storyboard1.JPG);
+}
+.static-bg{
+    background: #eae7dc;
+    color: white;
+}
+
+.parallax-bg-2 h1{
+  background: black;
+  color: white;
+}
+
+.static-bg2{
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.work3img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.work3img img{
+  padding: 0rem;
+  width: 20%;
+}

@@ -1,0 +1,596 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+code {
+  margin: 1rem;
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.btn-nav{
+  width: 70%;
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-nav {
+  margin: 1rem;
+  display: inline-block;
+  padding: 0.5em 0em;
+  color: black;
+  border: 1px solid white;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  font-weight: bolder;
+  border-bottom: 0.0625rem solid black;
+}
+
+/*[START] IN-TEXT LINK [START]*/
+.intropara{
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intropara p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/*[END] IN-TEXT LINK [END]*/
+
+/*[START] BUTTON[START]*/
+.buttons{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.subtn{
+  background: none;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+}
+.subtn:hover{
+  background: black;
+  color: white;
+  transition: 0.8s;
+}
+.resbtn{
+  border: 1.5px solid white;
+  background: black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+}
+.resbtn:hover{
+  background: white;
+  color: black;
+  transition: 0.8s;
+  border: 1.5px solid black;
+}
+/*[END] BUTTON [END]*/
+
+/*[START] INPUT TEXT [START]
+https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.html*/
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 30rem;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: silver;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid silver;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+  border-bottom: 2px solid white;
+}
+/*[END] INPUT TEXT [END]
+https://www.codingnepalweb.com/2020/07/awesome-input-animation-using-html-css.html*/
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+/*[START] HEADINGS [START]*/
+.headings{
+  width: 70%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.headings h1{
+  font-size: 3rem;
+}
+.headings h2{
+  font-size: 2.5rem;
+}
+.headings h3{
+  font-size: 2rem;
+}
+.headings h4{
+  font-size: 1.5rem;
+}
+/*[END] HEADINGS [END]*/
+
+/*[START] PARAGRAPHS [START]*/
+.paragraph{
+  width: 70%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.paragraph p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+/*[END] PARAGRAPHS[END]*/
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/* [START] NAVBAR [START]
+
+.navbar{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'open sans', sans-serif;
+
+}
+.navbar .logo{
+  padding: 0.625rem;
+  margin-left: 1.2rem;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  line-height: 5rem;
+}
+
+.navbar nav{
+  height: 5rem;
+  width: 100%;
+  background: black;
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 4rem;
+}
+
+.navbar li{
+  display: inline-block;
+  margin: 0 1rem;
+  line-height: 5rem;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a .active, a:hover{
+  border-bottom: 1px solid white;
+  transition: .5s;
+}
+
+/*
+@media (max-width: 1048px){
+
+  .navbar label{
+    font-size: 20px;
+  }
+
+  .navbar ul{
+  }
+
+  .navbar a{
+    font-size: 17px;
+  }
+    #icon{
+      position: relative;
+      display: inline-block;
+      background: yellow;
+    }
+    .navbar ul{
+      position: absolute;
+      min-width: 23rem;
+      max-width: 48.5rem;
+      height: 50vh;
+      margin-top: 0;
+      background: grey;
+      text-align: center;
+    }
+    .navbar li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .navbar a{
+      font-size: 20px;
+    }
+    a.active, a:hover{
+      border: none;
+    }
+  }
+[END] NAVBAR [END]*/
+
+.navbar2 {
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5rem;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.navbar2 .logo {
+  padding: 0 0.625rem;
+  margin: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+}
+
+@media (max-width: 20rem) {
+    .navbar2 .logo {
+        font-size: 1rem;
+    }
+}
+
+.navbar2 .links {
+  font-family: 'Open Sans', sans-serif;
+    float: right;
+    width: 40%;
+    margin: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.5rem;
+}
+.navbar2 .links li {
+    list-style: none;
+    align-items: center;
+}
+
+.navbar2 .links a {
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    color: black;
+    padding: 0.5rem 0;
+}
+#icon{
+  color: white;
+}
+
+
+@media screen and (max-width: 43rem) {
+  #icon{
+    transform: translateY(-73%);
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    padding: 0 30px;
+  }
+    .navbar2 .logo {
+      transform: translateY(30%);
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    .navbar2 .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 100%;
+        background: rgb(39, 39, 39);
+        width: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    .navbar2 .links a {
+        font-size: 15px;
+    }
+    .navbar2 :checked~.links {
+        bottom: 0;
+    }
+}
+
+.navbar2 a:hover{
+  color: grey;
+}
+
+.navbar2 a:hover::before {
+    width: 100%;
+}
+
+.navcontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.artefact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.artefact img{
+  max-width: 30rem;
+  margin: 1rem;
+}
+
+.apara{
+  flex-grow: 1;
+  flex-basis: 15em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 8rem 5rem;
+  float: right;
+}
+.apara{
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 75em){
+  .artefact{
+    justify-content: center;
+  }
+  img{
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 60em){
+  .apara{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 40em){
+  .apara{
+    font-size: 1rem;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.contact-info{
+  display: flex;
+  width: 80%;
+  max-width: 80rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+
+.card{
+  background: white;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.card-icon{
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.2);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  overflow: scroll;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+  background: red;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.dots label {
+  margin: 2rem;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid black 1px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {
+  background: black;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -400%;
+}
